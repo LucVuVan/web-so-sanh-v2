@@ -1,0 +1,116 @@
+/* Cài đặt chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Kiểu dáng cho bộ lọc */
+.controls {
+    display: grid;
+    /* Chia 3 cột: Tìm kiếm (lớn), Nút (nhỏ), Sắp xếp (vừa) */
+    grid-template-columns: 1fr auto auto;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+#search-bar {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Kiểu cho nút tìm kiếm */
+#search-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Màu xanh dương */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+#sort-select {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Kiểu dáng cho danh sách sản phẩm (dạng lưới) */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Kiểu dáng cho từng thẻ sản phẩm */
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    background-color: #eee;
+}
+.product-card h3 {
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+.product-card .price {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Thông báo khi không có sản phẩm hoặc đang tải */
+.no-results, .loading {
+    font-size: 1.2em;
+    color: #777;
+    text-align: center;
+    grid-column: 1 / -1; /* Trải dài toàn bộ lưới */
+    padding: 30px;
+}
+
+/* === BỔ SUNG MỚI === */
+/* Kiểu cho nơi bán */
+.product-card .seller {
+    font-size: 0.95em;
+    color: #555;
+    background-color: #f0f0f0;
+    padding: 5px 8px;
+    border-radius: 4px;
+    display: inline-block; /* Chỉ chiếm độ rộng cần thiết */
+    margin-top: 5px;
+}
+/* === KẾT THÚC BỔ SUNG === */
+
+/* Thông báo khi không có sản phẩm hoặc đang tải */
+.no-results, .loading {
+/* ... (như cũ) ... */
+}

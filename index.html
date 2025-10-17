@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web So Sánh Giá</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>So sánh giá</h1>
+
+        <div class="controls">
+            <input type="text" id="search-bar" placeholder="Nhập tên sản phẩm...">
+            <button id="search-button">Tìm kiếm</button>
+            
+            <select id="sort-select">
+                <option value="default">Mặc định</option>
+                <option value="price-asc">Giá: Tăng dần</option>
+                <option value="price-desc">Giá: Giảm dần</option>
+            </select>
+        </div>
+
+        <div id="product-list" class="product-grid">
+             <p class="no-results">Vui lòng nhập từ khóa để tìm kiếm sản phẩm.</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
